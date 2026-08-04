@@ -1,19 +1,24 @@
-function hitungGajiMingguan(jamKerja) {
+let jamKerja = [5, 7, 8, 9, 1]
+
+function menghitungGajiMingguan(jumlahJam) {
     let totalJam = 0;
-    for (let i = 0; i < jamKerja.length; i++) {
-        totalJam = totalJam + jamKerja[i];
+    const gajiNormal = 50000;
+    const gajiLembur = 75000;
+    for (let i = 0; i < jumlahJam.length; i++) {
+        totalJam += jumlahJam[i];
     }
 
-    if (totalJam > 40) {
+    let totalGaji = 0;
+
+    if (totalGaji > 40) {
         let jamLembur = totalJam - 40;
-        
-        return (40 * 50000) + (jamLembur * 75000);
-    } 
-    else {
-        return totalJam * 50000;
+        totalGaji = (40 * gajiNormal) + (jamLembur * gajiLembur);
+    } else {
+        totalGaji = totalJam * gajiNormal;
     }
+
+    console.log(`Total Jam Kerja: ${totalJam} jam`);
+    console.log(`Total Gaji Bersih: Rp ${totalGaji}`);
 }
 
-let jadwalKerja = [8, 8, 8, 8, 8, 5];
-
-console.log(hitungGajiMingguan(jadwalKerja)); 
+menghitungGajiMingguan(jamKerja)

@@ -1,20 +1,19 @@
-function evaluasiAsupanKalori(kalori) {
-    let total = 0;
-    let target = 2000;
+let daftarKaloriHarian = [5000, 3000, 1234, 5678, 9101, 1121, 3141]
+let totalKalori= 0;
 
-    for (let i = 0; i < kalori.length; i++) {
-        total = total + kalori[i];
+function jumlahKalori(jumlahKalori) {
+    for (let i = 0; i < jumlahKalori.length; i++) {
+        totalKalori += jumlahKalori[i];
     }
-
-    if (total > target) {
-        return "Asupan kalori MELEBIHI target";
-    } else if (total < target) {
-        return "Asupan kalori KURANG dari target";
+    console.log(`Total kalori kamu adalah: ${totalKalori}`);
+    
+    if (totalKalori >= 25000) {
+        console.log(`Anda kelebihan kalori`);
+    } else if (totalKalori <= 15000) {
+        console.log(`Anda harus menambah kalori`);
     } else {
-        return "Asupan kalori PAS sesuai target";
+        console.log(`Kalori anada sudah pas`);
     }
 }
 
-
-let makananHariIni = [500, 700, 600, 300]; 
-console.log(evaluasiAsupanKalori(makananHariIni));
+jumlahKalori(daftarKaloriHarian)

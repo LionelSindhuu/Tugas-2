@@ -1,18 +1,17 @@
-let hargaBuku = [50000, 60000, 70000]; 
+let hargaBuku = [20000, 100000, 23000, 80000, 40000]
+let totalHarga= 0;
 
-function hitungTotalBuku(totalBelanja) {
-    let belanjaan = 0;
-
-    for (let i = 0; i < totalBelanja.length; i++) {
-        belanjaan += totalBelanja[i];
+function jumlahBelanjaan(daftarHarga) {
+    
+      for (let i = 0; i < daftarHarga.length; i++) {
+        totalHarga += daftarHarga[i];
     }
-   
-    if (belanjaan > 150000) {
-        belanjaan = belanjaan - (belanjaan * 0.15);
+    console.log(`Total belanjaan: Rp ${totalHarga}`);
+    if (totalHarga >= 150000) {
+        console.log(`Selamat anda dapat diskon`);
+    } else {
+        console.log(`Maaf kamu tidak dapat diskon`);
     }
-
-    return belanjaan;
 }
 
-let totalBayar = hitungTotalBuku(hargaBuku);
-console.log(`Total yang harus dibayar: Rp ${totalBayar}`);
+jumlahBelanjaan(hargaBuku);
