@@ -14,7 +14,6 @@ function hitungGajiMingguan(jamKerja) {
     }
 }
 
-// === CONTOH PENGGUNAAN ===
 let jadwalKerja = [8, 8, 8, 8, 8, 5];
 
 console.log(hitungGajiMingguan(jadwalKerja)); 
