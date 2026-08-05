@@ -7,7 +7,7 @@ function RestoranFavorit(daftarRestoran) {
     for (let i = 0; i < daftarRestoran.length; i++) {
         let resto = daftarRestoran[i];
 
-        if (resto.bintang >= 0 && resto.buka === true) {
+        if (resto.bintang >= 4.5 && resto.buka === true) {
             console.log(`${resto.nama} - Rating: ${resto.bintang}`);               
         }
     }

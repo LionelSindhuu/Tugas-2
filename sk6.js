@@ -1,9 +1,9 @@
 const jamKerja = [5, 7, 8, 9, 1]
+const gajiNormal = 50000;
+const gajiLembur = 75000;
+let totalJam = 0;
 
 function menghitungGajiMingguan(jumlahJam) {
-    let totalJam = 0;
-    const gajiNormal = 50000;
-    const gajiLembur = 75000;
     for (let i = 0; i < jumlahJam.length; i++) {
         totalJam += jumlahJam[i];
     }
