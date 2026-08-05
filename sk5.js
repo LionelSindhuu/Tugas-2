@@ -3,13 +3,13 @@ let dataProduk = [
     {nama: "indomiw", stok: 36, aktif: false},
 ]
 
-function stokBarang(daftarProduk, minStok = 10) {
+function stokBarang(daftarProduk) {
     for (let i = 0; i < daftarProduk.length; i++) {
         let barang = daftarProduk[i];
 
  if (barang.aktif === true) {
             
-            if (barang.stok >= minStok) {
+            if (barang.stok >= 10) {
                 console.log(`stok ${barang.nama}: ${barang.stok} -> stok barang aman jaya`);
                 console.log(`status barang: ${barang.aktif}`);
             } else {
