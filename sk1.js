@@ -1,4 +1,4 @@
-let hargaBuku = [20000, 100000, 23000, 80000, 40000]
+const hargaBuku = [20000, 100000, 23000, 80000, 40000]
 let totalHarga= 0;
 
 function jumlahBelanjaan(daftarHarga) {

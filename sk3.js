@@ -17,7 +17,7 @@ function filterParkirGanjilGenap(daftarPlat, tanggal) {
     return diizinkan;
 }
 
-let platKendaraan = [1234, 9999, 8882, 1231];
+const platKendaraan = [1234, 9999, 8882, 1231];
 let tanggalHariIni = 24;
 
 let hasil = filterParkirGanjilGenap(platKendaraan, tanggalHariIni);

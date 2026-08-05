@@ -1,4 +1,4 @@
-let dataMahasiswa = [
+const dataMahasiswa = [
     {nama: "Budi", ipk: 2.5, pendapatanOrangTua: 5000000},
     {nama: "Siti", ipk: 3.5, pendapatanOrangTua: 3000000},
     {nama: "Nunung", ipk: 3.4, pendapatanOrangTua: 2000000},

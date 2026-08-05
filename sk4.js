@@ -1,4 +1,4 @@
-let daftarKaloriHarian = [5000, 3000, 1234, 5678, 9101, 1121, 3141]
+const daftarKaloriHarian = [5000, 3000, 1234, 5678, 9101, 1121, 3141]
 let totalKalori= 0;
 
 function jumlahKalori(jumlahKalori) {

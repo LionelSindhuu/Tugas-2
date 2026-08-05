@@ -1,6 +1,6 @@
-let dataProduk = [
+const dataProduk = [
     {nama: "permen", stok: 2, aktif: true},
-    {nama: "indomiw", stok: 36, aktif: false},
+    {nama: "indomiw", stok: 36, aktif: true},
 ]
 
 function stokBarang(daftarProduk) {

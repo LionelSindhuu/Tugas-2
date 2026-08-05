@@ -1,4 +1,4 @@
-let dataPasien = [
+const dataPasien = [
     {nama: "justin", umur: 16}, 
     {nama: "gilkris", umur: 70},
 ]

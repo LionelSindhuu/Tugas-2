@@ -1,19 +1,14 @@
-let dataRestoran = [
-    {nama: "chilin", bintang: 5, buka: true},
-    {nama: "marugame", bintang: 3, buka: true},
-    {nama: "sushiyay", bintang: 5, buka: true},
-    {nama: "burgerking", bintang: 1, buka: true},
-    {nama: "boost", bintang: 2, buka: false},
+const dataRestoran = [
+    {nama: "kfc", bintang: 5, buka: true},
+    {nama: "yushinoya", bintang: 3, buka: true},
 ]
 
-function RestoranFavorit(daftarRestoran, minRating = 4.5) {
+function RestoranFavorit(daftarRestoran) {
     for (let i = 0; i < daftarRestoran.length; i++) {
         let resto = daftarRestoran[i];
 
-        if (resto.bintang >= minRating && resto.buka === true) {
-            console.log(`${resto.nama} - Rating: ${resto.bintang}`);
-    
-           
+        if (resto.bintang >= 0 && resto.buka === true) {
+            console.log(`${resto.nama} - Rating: ${resto.bintang}`);               
         }
     }
 }  

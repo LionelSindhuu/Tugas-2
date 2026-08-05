@@ -1,4 +1,4 @@
-let daftarEmail = [
+const daftarEmail = [
     "lusimandi@gmail.com",
     "rarajonggo@gmailcom",
     "michiegmail.com",

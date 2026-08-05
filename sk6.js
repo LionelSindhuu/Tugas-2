@@ -1,4 +1,4 @@
-let jamKerja = [5, 7, 8, 9, 1]
+const jamKerja = [5, 7, 8, 9, 1]
 
 function menghitungGajiMingguan(jumlahJam) {
     let totalJam = 0;

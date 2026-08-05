@@ -1,4 +1,4 @@
-let dataPemain = [
+const dataPemain = [
     {nama: "lionel", skor: 950},
     {nama: "justin", skor: 800},
     {nama: "gilkris", skor: 580},
