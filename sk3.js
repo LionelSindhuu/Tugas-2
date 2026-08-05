@@ -21,4 +21,5 @@ let platKendaraan = [1234, 9999, 8882, 1231];
 let tanggalHariIni = 24;
 
 let hasil = filterParkirGanjilGenap(platKendaraan, tanggalHariIni);
-console.log(hasil); 
+console.log(`Tanggal Hari ini: ${tanggalHariIni}`);
+console.log(hasil);
